@@ -1,17 +1,18 @@
-import { Grid } from "../../../components/Grid";
-import { Typography } from "../../../components/Typography";
+import { Button } from "../../../components/ui/button";
 
 const LandingPage = () => {
   return (
-    <>
-      <Grid cols={2} justify="center" style={{ marginTop: "30px" }}>
-        <Typography color="primary" variant="h1">
-          Oi 2
-        </Typography>
-        <Typography variant="h3">Oi 3</Typography>
-        <Typography variant="h1">Oi 3</Typography>
-      </Grid>
-    </>
+    <div className="min-h-screen bg-gradient-to-tr from-0% from-border to-blue-700 flex flex-col items-center justify-center text-white">
+      <h1 className="text-6xl font-bold mb-4">
+        Bem-vindo à Nossa Landing Page
+      </h1>
+      <p className="text-xl mb-8">
+        Uma página incrível criada com Tailwind CSS e shadcn/ui
+      </p>
+      <Button className="bg-white text-blue-600 px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
+        Começar Agora
+      </Button>
+    </div>
   );
 };
 
